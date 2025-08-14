@@ -28,6 +28,7 @@
     <Application.Resources>
         <SolidColorBrush x:Key="HighlightBlue">#88B6F1</SolidColorBrush>
         <SolidColorBrush x:Key="BackgroundColor">#101727</SolidColorBrush>
+        <SolidColorBrush x:Key="AlteranteRowColor">#0D111C</SolidColorBrush>
         <SolidColorBrush x:Key="HighlightRed">#4D2323</SolidColorBrush>
         <SolidColorBrush x:Key="DefaultButtonColor">#505050</SolidColorBrush>
         <SolidColorBrush x:Key="TextColor">#dedede</SolidColorBrush>

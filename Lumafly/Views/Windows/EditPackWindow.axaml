@@ -202,10 +202,15 @@
                             </Style>
                         </ScrollViewer.Styles>
                         <StackPanel>
+                            <StackPanel.Styles>
+                                <Style Selector="StackPanel > ItemsRepeater > Border:nth-child(odd)">
+                                    <Setter Property="Background" Value="{DynamicResource AlteranteRowColor}"/>
+                                </Style>
+                            </StackPanel.Styles>
                             <ItemsRepeater ItemsSource="{Binding SelectedMods_Enabled_Modlinks}">
                                 <ItemsRepeater.ItemTemplate>
                                     <DataTemplate x:DataType="models:ModItem">
-                                        <Border BorderBrush="#dedede">
+                                        <Border BorderBrush="#dedede" Name="AlternatingBorder">
                                             <Grid ColumnDefinitions="Auto *">
                                                 <Button Grid.Column="1" Classes="Remove">
                                                     <PathIcon Data="{StaticResource delete_regular}" />

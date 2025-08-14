@@ -4,7 +4,9 @@
     <Design.PreviewWith>
         <customControls:MenuCheckBox />
     </Design.PreviewWith>
-
+    <Style Selector="customControls|MenuCheckBox:nth-child(odd) Border#AlternatingBorder">
+        <Setter Property="Background" Value="{DynamicResource AlteranteRowColor}"/>
+    </Style>
     <Style Selector="customControls|MenuCheckBox">
         <!-- Set Defaults -->
         <Setter Property="MinWidth" Value="80"/>
@@ -12,6 +14,7 @@
         
         <Setter Property="Template">
             <ControlTemplate>
+                <Border Name="AlternatingBorder">
                     <Button 
                         Name="SelectableButton"
                         BorderThickness="0"
@@ -46,6 +49,7 @@
                         </StackPanel>
                         </Grid>
                     </Button>
+                </Border>
             </ControlTemplate>
         </Setter>
     </Style>
